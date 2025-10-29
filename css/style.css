@@ -1,0 +1,263 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #1c434a;
+}
+
+/* ヒーローセクション */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6da8bc, #bbd7c8);
+  color: white;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero .catch {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #1c434a;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #6da8bc;
+}
+
+/* サービスセクション */
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background-color: #6da8bc;
+}
+
+/* 図形のバリエーション */
+.circle { border-radius: 50%; }
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #6da8bc;
+  background: none;
+}
+
+.infographic {
+  padding: 80px 20px;
+  background: #f7f7f7;
+  text-align: center;
+  color: #1c434a;
+}
+
+.infographic h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.info-block {
+  display: inline-block;
+  width: 200px;
+  margin: 0 20px 40px;
+}
+
+.chart {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  position: relative;
+}
+
+/* 円グラフ風 */
+.circle-chart {
+  border-radius: 50%;
+  background: conic-gradient(#6da8bc 0% 80%, #bbd7c8 80% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #1c434a;
+}
+
+/* 棒グラフ風 */
+.bar-chart {
+  width: 50px;
+  height: 120px;
+  background: #bbd7c8;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  background-color: #6da8bc;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.5s ease;
+}
+
+/* 線グラフ風（簡易） */
+.line-chart {
+  width: 120px;
+  height: 120px;
+  border-bottom: 3px solid #6da8bc;
+  border-left: 3px solid #6da8bc;
+  position: relative;
+}
+
+.line-chart .line {
+  width: 100%;
+  height: 3px;
+  background-color: #1c434a;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+}
+
+
+/* 詳細セクション */
+.details {
+  padding: 80px 20px;
+  background: #bbd7c8;
+  text-align: center;
+  color: #1c434a;
+}
+
+.details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.detail-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.detail-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.detail-card:hover {
+  transform: translateY(-10px);
+}
+
+/* サークルアイコン */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background-color: #6da8bc;
+}
+
+/* CTAセクション */
+.cta {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #6da8bc, #1c434a);
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* CTAボタン */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: white;
+  color: #1c434a;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #bbd7c8;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+/* フッター */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c434a;
+  color: white;
+}
